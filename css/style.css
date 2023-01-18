@@ -1,0 +1,97 @@
+body
+{
+    height: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px, 0px, 0px, 0px;
+    font-family: 'Raleway', sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 22px;
+    width: 243px;
+}
+.logo{
+    height: 19px;
+    width: 61.09px;
+}
+.lien:hover
+{
+    border-top: 1px solid #0065fc;
+}
+.recherche
+{
+display: flex;
+flex-direction: column;
+}
+.barre
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.roundedborder
+{
+    border: 1px solid #d9d9d9;
+    border-radius: 25px;
+}
+.colonne
+{
+    display: flex;
+    flex-direction: column;
+}
+.gris
+{
+    background-color: #d9d9d9;
+}
+.backgroundblue
+{
+    background-color: #0065fc;
+    color: white;
+}
+.ColorBlue
+{
+    color: #0065fc;
+}
+.backgroundgrey
+{
+    background-color: #d9d9d9;
+}
+.roundedleftborder
+{
+    border: 1px solid #d9d9d9;
+    border-radius: 15px 0px 0px 15px;
+}
+.roundedrightborder
+{
+    border: 1px solid #d9d9d9;
+    border-radius: 0px 15px 15px 0px;
+}
+
+.carte
+{height: 240px;
+width: 200px;
+max-height: 25%;
+max-width: 25%;}
+
+.principal
+{
+    height: 700px;
+    width: 60%;
+}
+.image
+{
+    height: 50px;
+    width: 40px;
+    margin: 5px;
+}
