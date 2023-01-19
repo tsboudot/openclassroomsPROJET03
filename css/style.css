@@ -20,6 +20,21 @@ nav{
     margin-right: 22px;
     width: 243px;
 }
+.flexAround{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexCentre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flexBetween{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .logo{
     height: 19px;
     width: 61.09px;
@@ -32,6 +47,11 @@ nav{
 {
 display: flex;
 flex-direction: column;
+}
+.variablerow
+{
+    display: flex;
+    flex-direction: row;
 }
 .barre
 {
@@ -72,26 +92,32 @@ flex-direction: column;
     border: 1px solid #d9d9d9;
     border-radius: 15px 0px 0px 15px;
 }
+
 .roundedrightborder
 {
     border: 1px solid #d9d9d9;
     border-radius: 0px 15px 15px 0px;
 }
-
-.carte
-{height: 240px;
-width: 200px;
-max-height: 25%;
-max-width: 25%;}
-
-.principal
+.roundedBorder
 {
-    height: 700px;
-    width: 60%;
+    border: 2px solid  #d9d9d9;
+    border-radius: 15px 15px 15px 15px;
 }
-.image
+.sizeHebergements{
+    flex: 2;
+    height: 650px;
+    margin-right: 20px;
+}
+.sizePopulaire{
+    flex: 1;
+    height: 650px;
+    margin-left: 20px;
+}
+.imgHebergements1
 {
-    height: 50px;
-    width: 40px;
-    margin: 5px;
+    background-image: url("../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+    background-size: cover;
+    background-position: center;;
+    width: 100%;
+    height: 120px;
 }
