@@ -7,133 +7,170 @@ body
     padding-bottom: 0px;
     margin: 0px, 0px, 0px, 0px;
     font-family: 'Raleway', sans-serif;
+    color: black;
+    line-height: 1em;
 }
-header{
+.flex
+{
     display: flex;
-    flex-direction: row;
-   justify-content: space-between;
-}
-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: 22px;
-    width: 243px;
-}
+}                                   /*flex*/
 .flexAround{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
 }
-.flexCentre{
+.flexCenter{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 .flexBetween{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+}
+.flexStart{
+    display: flex;
+    justify-content: flex-start;
+}
+.alignCenter
+{
     align-items: center;
 }
-.logo{
-    height: 19px;
-    width: 61.09px;
+.alignStart{
+    align-items: flex-start;
 }
-.lien:hover
+.row
 {
-    border-top: 1px solid #0065fc;
-}
-.recherche
-{
-display: flex;
-flex-direction: column;
-}
-.variablerow
-{
-    display: flex;
     flex-direction: row;
 }
-.barre
+.column
 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-.roundedborder
-{
-    border: 1px solid #d9d9d9;
-    border-radius: 25px;
-}
-.colonne
-{
-    display: flex;
     flex-direction: column;
 }
-.gris
+.DirVariable
 {
-    background-color: #d9d9d9;
+    flex-direction: row;
 }
-
+        /*Border */
+.roundedBorderTop
+{
+    border-radius : 10px 10px 0px 0px;
+}
+.roundedBorderleft
+{
+    border-radius : 10px 0px 0px 10px;
+}
+.roundedBorderRight
+{
+    border-radius : 0px 10px 10px 0px;
+}
+.roundedBorderAll
+{
+    border-radius: 10px;
+}
+.solidBorder
+{
+    border: 1px solid black;
+}
+.padding
+{
+    padding: 10px;
+}
+.margin
+{
+    margin: 10px;
+}
+.variableMarginBottom
+{
+    margin-bottom: 25px;
+}
+                            /*Color */
 .backgroundblue
 {
     background-color: #0065fc;
-    color: white;
-}
-.ColorBlue
-{
-    color: #0065fc;
+    color: white;    
 }
 .backgroundgrey
 {
     background-color: #d9d9d9;
 }
-.roundedleftborder
+.backgroundWhite
 {
-    border: 1px solid #d9d9d9;
-    border-radius: 15px 0px 0px 15px;
+    background-color: white;
 }
-
-.roundedrightborder
+.ColorBlue
 {
-    border: 1px solid #d9d9d9;
-    border-radius: 0px 15px 15px 0px;
+    color:#0065fc;
 }
-.roundedBorder
+header
 {
-    border: 2px solid  #d9d9d9;
-    border-radius: 15px 15px 15px 15px;
+    height 45px;
+}
+.logo{
+    height: 19px;
+    width: 61.09px;
+}
+.lien
+{
+    text-decoration: none;
+    color: black;
+    border-bottom: 0px solid black;
+}
+.lien:hover
+{
+    border-top: 1px solid #0065fc;
+    color:#0065fc;
+}
+.sectionRecherche
+{
+    align-items: flex-start;
 }
 .sizeHebergements{
     flex: 2;
     height: 650px;
     margin-right: 20px;
-    padding: 40px;
+    padding: 20px;
 }
 .sizePopulaire{
     flex: 1;
     height: 650px;
     margin-left: 20px;
+    padding: 20px;
 }
-.carte
+.carteHeb
 {
-    display:flex;
-    flex-direction: column;
-    align-items: baseline;
-    
+    width: 246px;
+    height: 199px;
+    margin: 0px 5px 0px 5px;
+    padding: 3px 7px 3px 0px;
+}
+.imgHebergements
+{
+    height: 49%;
+    width: 98%;
+    margin: 2px;
+    padding: 2px 5px 2px 0px;
+}
+.photos{
+height: 124px;
+width: 242px;
+margin: 7px 2px 7px 7px;
+}
+.hebInfos
+{
+    height: 49%;
+    margin: 2px;
+    padding-top: 3%;
+}
+.hebTitre
+{
+    height: 31%;
     padding: 2px;
-    background-color: white;
 }
-.imgHebergements1
+.hebPrix
 {
-    background-image: url("../images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-    background-size: cover;
-    background-position: center;;
-    width: 100%;
-    height: 120px;
-}
-.roundedtopBorder
+    height: 29%;
+}.hebEtoiles
 {
-    border: solid 1px white;
-    border-radius: 15px 15px 0px 0px;
+ Height: 29%;}
+.headPopulaire{
+    
 }
