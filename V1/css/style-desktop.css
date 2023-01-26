@@ -50,7 +50,9 @@ body
 {
     flex-direction: row;
 }
-
+.sectionRecherche{
+    height: 36px;
+}
 .VariableColumn
 {
     flex-direction: column;
@@ -96,7 +98,7 @@ body
 }
 .backgroundgrey
 {
-    background-color: #d9d9d9;
+    background-color: #F2F2F2;
 }
 .backgroundWhite
 {
@@ -114,12 +116,17 @@ header
 .logo{
     height: 19px;
     width: 61.09px;
+    padding-top: 44px;
+}
+nav{
+    width: 25%;
+    min-width: 280px;
 }
 .lien
 {
     text-decoration: none;
     color: black;
-    border-bottom: 0px solid black;
+    padding-top: 44px;
 }
 .lien:hover
 {
@@ -129,6 +136,9 @@ header
 .sectionRecherche
 {
     align-items: flex-start;
+}
+.search{
+    height: 36px;
 }
 .sizeHebergements{
     flex: 2;
