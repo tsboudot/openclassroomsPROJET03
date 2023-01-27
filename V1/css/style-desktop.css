@@ -50,9 +50,6 @@ body
 {
     flex-direction: row;
 }
-.sectionRecherche{
-    height: 36px;
-}
 .VariableColumn
 {
     flex-direction: column;
@@ -108,6 +105,17 @@ body
 {
     color:#0065fc;
 }
+.styleText1{
+    font-size: 22px;
+    font-weight: bold;
+}
+.styleText2{
+    font-size: 16px;
+    font-weight: bold;
+}
+.styleText3{
+    font-size: 16px;
+}
 header
 {
     height 45px;
@@ -133,9 +141,8 @@ nav{
     border-top: 1px solid #0065fc;
     color:#0065fc;
 }
-.sectionRecherche
-{
-    align-items: flex-start;
+.sectionRecherche{
+    height: 36px;
 }
 .search{
     height: 36px;
