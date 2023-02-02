@@ -3,9 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Booki</title>
-        <link rel="stylesheet" type="text/css" media="screen and (min-width: 768px)" href="css/style-desktop.css">
-        <link rel="stylesheet" type="text/css" media="screen and (min-width: 480px) and (max-width: 767px)" href="css/style-tablette.css">
-        <link rel="stylesheet" type="text/css" media="screen and (max-width: 479px)" href="css/style-mobile.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <script src="https://kit.fontawesome.com/0601797f3e.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
@@ -15,20 +13,20 @@
             <div> 
             <img src="images/logo/Booki.png" alt="logo" class="logo"/>
             </div>
-            <nav class="flexBetween row ">
+            <nav class="row ">
                 <div>
-                    <a href="hebergement.html" class="lien flexCenter alignCenter styleText3">Hébergements
+                    <a href="hebergement.html" class="lien flexCenter alignCenter">Hébergements
                     </a>
                 </div>
                 <div>
-                    <a href="activités.html"  class="lien flexCenter alignCenter styleText3">Activités
+                    <a href="activités.html"  class="lien flexCenter alignCenter">Activités
                     </a></div>
             </nav>
         </header>
         <div class="flex alignStart column">
             <div>
-                <h4 class="styleText1">Trouvez votre hébergement pour des vacances de rêve</h4>
-                <p class="styleText3">En plein centre-ville ou en pleine nature</p>
+                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                <p>En plein centre-ville ou en pleine nature</p>
             </div>
             <div class="flex alignStart row padding margin">
                 <div class="backgroundgrey roundedBorderleft ColorBlue padding">
@@ -38,15 +36,16 @@
             <div class="roundedBorderRight backgroundblue padding">Rechercher</div>
             </div>
         </div>
-        <div class=" flex alignCenter row">
+        <div class="sectionFiltre">
             <div><h1>Filtres</h1></div>
-            <div class=" flexCenter roundedBorderAll solidBorder row padding alignCenter">
+            <div class="contenantFiltres flexAround alignCenter">
+            <div class=" flexCenter row alignCenter boxFiltre" id="economique">
                 <div>
                     <i class="fa-solid fa-money-bill-1-wave ColorBlue margin"></i>
                 </div>
-                <div><p>Economique</p></div>
+                <div ><p>Economique</p></div>
             </div>
-            <div class="flexCenter roundedBorderAll solidBorder row padding alignCenter">
+            <div class=" flexCenter row alignCenter boxFiltre" id="familial">
                 <div>
                     <i class="fa-solid fa-child-dress ColorBlue margin"></i>
                 </div>
@@ -54,138 +53,172 @@
                     <p>Familial</p>
                 </div>
             </div>
-            <div class="flexCenter roundedBorderAll solidBorder row padding alignCenter">
+            <div class=" flexCenter row alignCenter boxFiltre" id="romantique">
             <div>
                 <i class="fa-solid fa-heart ColorBlue margin"></i>
             </div>
             <div>
                 <p>Romantique</p>
             </div></div>
-            <div class="flexCenter roundedBorderAll solidBorder row padding alignCenter">
+            <div class=" flexCenter row alignCenter boxFiltre" id="animaux">
             <div><i class="fa-solid fa-dog ColorBlue margin"></i></div>
             <div><p>Animaux autorisés</p></div>
-
+        </div>
             </div>
         </div>
 
         <div class="flex sectionRecherche row">
-            <div><i class="fa-solid fa-circle-info"></i>
+            <div class="padding"><i class="fa-solid fa-circle-info flexCenter alignCenter"></i>
             </div>
             <div><p>Plus de 500 logements sont disponibles dans cette ville</p></div>
         </div>
-        <section class="flexAround">
-            <div class="sizeHebergements flexBetween column backgroundgrey roundedBorderAll">
-                <h3>Hebergements à Marseille</h3>
-                <div class="flexAround alignCenter DirVariable ">
+        <section>
+            <div class="sizeHebergements column backgroundgrey roundedBorderAll">
+                <h2>Hebergements à Marseille</h2>
+                <div class="contenuHeb flexAround alignCenter DirVariable ">
                     <div class="carteHeb flexCenter column alignCenter backgroundWhite roundedBorderAll">
-                        <div class="imgHebergements"><img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="annie-spratt-Eg1qcIitAuA-unsplash" class="photos roundedBorderTop"/></div>
+                        <div class="imgHebergements"><img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="annie-spratt-Eg1qcIitAuA-unsplash" class="photos roundedBorderTop"/></div>
                         <div class="hebInfos flexStart column">
                             <div class ="hebTitre"><h3>Auberge de Cannebière</h3></div>
                             <div class ="hebPrix"><p>Nuit à partir de 25e</p></div>
-                            <div class="hebEtoiles">etoiles</div>
+                            <div class="hebEtoiles row"><i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star colorGrey "></i></div>
                         </div>
                     </div>
                     <div class="carteHeb flexCenter column alignCenter backgroundWhite roundedBorderAll">
-                        <div class="imgHebergements"><img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="annie-spratt-Eg1qcIitAuA-unsplash" class="photos roundedBorderTop"/></div>
+                        <div class="imgHebergements"><img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="annie-spratt-Eg1qcIitAuA-unsplash" class="photos roundedBorderTop"/></div>
                         <div class="hebInfos flexStart column">
-                            <div class ="hebTitre"><h3>Auberge de Cannebière</h3></div>
-                            <div class ="hebPrix"><p>Nuit à partir de 25e</p></div>
-                            <div class="hebEtoiles">etoiles</div>
+                            <div class ="hebTitre"><h3>Hotel du port</h3></div>
+                            <div class ="hebPrix"><p>Nuit à partir de 52e</p></div>
+                            <div class="hebEtoiles row"><i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star colorGrey "></i></div>
                         </div>
                     </div>
                     <div class="carteHeb flexCenter column alignCenter backgroundWhite roundedBorderAll">
-                        <div class="imgHebergements"><img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="annie-spratt-Eg1qcIitAuA-unsplash" class="photos roundedBorderTop"/></div>
+                        <div class="imgHebergements"><img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="annie-spratt-Eg1qcIitAuA-unsplash" class="photos roundedBorderTop"/></div>
                         <div class="hebInfos flexStart column">
-                            <div class ="hebTitre"><h3>Auberge de Cannebière</h3></div>
-                            <div class ="hebPrix"><p>Nuit à partir de 25e</p></div>
-                            <div class="hebEtoiles">etoiles</div>
+                            <div class ="hebTitre"><h3>Hôtel les mouettes</h3></div>
+                            <div class ="hebPrix"><p>Nuit à partir de 76e</p></div>
+                            <div class="hebEtoiles row"><i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star colorGrey "></i></div>
                         </div>
                     </div>
                 </div>
-                <div class="flexAround alignCenter DirVariable">
+                <div class="contenuHeb flexAround alignCenter DirVariable">
                     <div class="carteHeb flexCenter column alignCenter backgroundWhite roundedBorderAll">
                         <div class="imgHebergements"><img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="annie-spratt-Eg1qcIitAuA-unsplash" class="photos roundedBorderTop"/></div>
                         <div class="hebInfos flexStart column">
-                            <div class ="hebTitre"><h3>Auberge de Cannebière</h3></div>
-                            <div class ="hebPrix"><p>Nuit à partir de 25e</p></div>
-                            <div class="hebEtoiles">etoiles</div>
+                            <div class ="hebTitre"><h3>Hôtel de la mer</h3></div>
+                            <div class ="hebPrix"><p>Nuit à partir de 46e</p></div>
+                            <div class="hebEtoiles row"><i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star colorGrey "></i></div>
                         </div>
                     </div>
                     <div class="carteHeb flexCenter column alignCenter backgroundWhite roundedBorderAll">
-                        <div class="imgHebergements"><img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="annie-spratt-Eg1qcIitAuA-unsplash" class="photos roundedBorderTop"/></div>
+                        <div class="imgHebergements"><img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="annie-spratt-Eg1qcIitAuA-unsplash" class="photos roundedBorderTop"/></div>
                         <div class="hebInfos flexStart column">
-                            <div class ="hebTitre"><h3>Auberge de Cannebière</h3></div>
-                            <div class ="hebPrix"><p>Nuit à partir de 25e</p></div>
-                            <div class="hebEtoiles">etoiles</div>
+                            <div class ="hebTitre"><h3>Auberge Le Panier</h3></div>
+                            <div class ="hebPrix"><p>Nuit à partir de 23e</p></div>
+                            <div class="hebEtoiles row"><i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star colorGrey "></i></div>
                         </div>
                     </div>
-                <div class="carteHeb flexCenter column alignCenter backgroundWhite roundedBorderAll">
-                    <div class="imgHebergements"><img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="annie-spratt-Eg1qcIitAuA-unsplash" class="photos roundedBorderTop"/></div>
-                    <div class="hebInfos flexStart column">
-                        <div class ="hebTitre"><h3>Auberge de Cannebière</h3></div>
-                        <div class ="hebPrix"><p>Nuit à partir de 25e</p></div>
-                        <div class="hebEtoiles">etoiles</div>
+                    <div class="carteHeb flexCenter column alignCenter backgroundWhite roundedBorderAll">
+                        <div class="imgHebergements"><img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="annie-spratt-Eg1qcIitAuA-unsplash" class="photos roundedBorderTop"/></div>
+                        <div class="hebInfos flexStart column">
+                            <div class ="hebTitre"><h3>Hôtel chez Amina</h3></div>
+                            <div class ="hebPrix"><p>Nuit à partir de 96e</p></div>
+                            <div class="hebEtoiles row"><i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star colorGrey "></i></div>
+                        </div>
                     </div>
-                </div>
             </div>
-                    
+                    <h4>Afficher plus</h4>
                 </div>
-                <p></p>
-            </div>
-            <div class ="sizePopulaire flexBetween column  alignCenter roundedBorderAll backgroundgrey">
+            <div class ="sizePopulaire column  alignCenter roundedBorderAll backgroundgrey">
                 <div class="flexBetween alignCenter row">
-                    <div><h3>Les plus populaires</h3></div>
+                    <div><h2>Les plus populaires</h2></div>
                     <div class="ColorBlue"><i class="fa-solid fa-chart-line"></i></div>
                 </div>
-                <div class="contenuPop flexBetween alignCenter column">
+                <div class="contenuPop flexBetween alignCenter">
                     <div class="cartePop flexCenter row alignCenter backgroundWhite roundedBorderAll">
-                        <div class="imgPop"><img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="annie-spratt-Eg1qcIitAuA-unsplash" class="photosPop roundedBorderleft"/></div>
+                        <div class="imgPop"><img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="annie-spratt-Eg1qcIitAuA-unsplash" class="photosPop roundedBorderleft"/></div>
                         <div class="popInfos flexStart column">
-                            <div class ="popTitre"><h3>Auberge de Cannebière</h3></div>
-                            <div class ="popPrix"><p>Nuit à partir de 25e</p></div>
-                            <div class="popEtoiles">etoiles</div>
+                            <div class ="popTitre"><h3>Hôtel le soleil du matin</h3></div>
+                            <div class ="popPrix"><p>Nuit à partir de 128e</p></div>
+                            <div class="hebEtoiles row"><i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star colorGrey "></i></div>
                         </div>
                     </div>
                     <div class="cartePop flexCenter row alignCenter backgroundWhite roundedBorderAll">
-                        <div class="imgPop"><img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="annie-spratt-Eg1qcIitAuA-unsplash" class="photosPop roundedBorderleft"/></div>
+                        <div class="imgPop"><img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="annie-spratt-Eg1qcIitAuA-unsplash" class="photosPop roundedBorderleft"/></div>
                         <div class="popInfos flexStart column">
-                            <div class ="popTitre"><h3>Auberge de Cannebière</h3></div>
-                            <div class ="popPrix"><p>Nuit à partir de 25e</p></div>
-                            <div class="popEtoiles">etoiles</div>
+                            <div class ="popTitre"><h3>Chambres d'hotes au coeur de l'eau</h3></div>
+                            <div class ="popPrix"><p>Nuit à partir de 71e</p></div>
+                            <div class="hebEtoiles row"><i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star colorGrey "></i></div>
                         </div>
                     </div>
                     <div class="cartePop flexCenter row alignCenter backgroundWhite roundedBorderAll">
-                        <div class="imgPop"><img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="annie-spratt-Eg1qcIitAuA-unsplash" class="photosPop roundedBorderleft"/></div>
+                        <div class="imgPop"><img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="annie-spratt-Eg1qcIitAuA-unsplash" class="photosPop roundedBorderleft"/></div>
                         <div class="popInfos flexStart column">
-                            <div class ="popTitre"><h3>Auberge de Cannebière</h3></div>
-                            <div class ="popPrix"><p>Nuit à partir de 25e</p></div>
-                            <div class="popEtoiles">etoiles</div>
+                            <div class ="popTitre"><h3>Hôtel bleu et blanc</h3></div>
+                            <div class ="popPrix"><p>Nuit à partir de 68e</p></div>
+                            <div class="hebEtoiles row"><i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star ColorBlue"></i>
+                                <i class="fa-solid fa-star colorGrey "></i></div>
                         </div>
                     </div>
-                </div>0
+                </div>
             </div>
         </section>
-        <section>
+        <div class="divAct flexCenter column">
             <h3>Activités à Marseille</h3>
-            <div class="activité flexBetween alignStart DirVariable">
+            <div class="activité flexBetween aligncenter DirVariable">
             <div class="activCarte flexBetween VariableColumn flexStart roundedBorderAll solidBorder">
-                <div class="imgAct"><img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="photosAct roundedBorderTop"/></div>
+                <div class="imgAct"><img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="photosAct roundedBorderTop"/></div>
                 <div class="actTitre"><h4>Vieux-Port</h4></div>
             </div>
             <div class="activCarte flexBetween VariableColumn flexStart roundedBorderAll solidBorder">
-                <div class="imgAct"><img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="photosAct roundedBorderTop"/></div>
-                <div class="actTitre"><h4>Vieux-Port</h4></div>
+                <div class="imgAct"><img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" class="photosAct roundedBorderTop"/></div>
+                <div class="actTitre"><h4>Fort de Pomègues</h4></div>
+            </div>
+            <div class="activCarte flexBetween VariableColumn flexStart roundedBorderAll solidBorder">
+                <div class="imgAct"><img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="photosAct roundedBorderTop"/></div>
+                <div class="actTitre"><h4>Parc national des calanques</h4></div>
             </div>
             <div class="activCarte flexBetween VariableColumn flexStart roundedBorderAll solidBorder">
                 <div class="imgAct"><img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="photosAct roundedBorderTop"/></div>
-                <div class="actTitre"><h4>Vieux-Port</h4></div>
-            </div>
-            <div class="activCarte flexBetween VariableColumn flexStart roundedBorderAll solidBorder">
-                <div class="imgAct"><img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" class="photosAct roundedBorderTop"/></div>
-                <div class="actTitre"><h4>Vieux-Port</h4></div>
+                <div class="actTitre"><h4>Notre-Dame-de-la-Garde</h4></div>
             </div>
             </div>
-        </section>
+        </div>
         <footer class="flexAround DirVariable flexAround backgroundgrey">
             <div class="infoFoot column">
                 <h6>A propos</h6>
