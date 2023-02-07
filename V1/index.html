@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Booki</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <script src="https://kit.fontawesome.com/0601797f3e.js" crossorigin="anonymous"></script>
@@ -13,12 +14,12 @@
             <div> 
             <img src="images/logo/Booki.png" alt="logo" class="logo"/>
             </div>
-            <nav class="row ">
-                <div>
+            <nav class=" flex row ">
+                <div  class="contenantLien">
                     <a href="hebergement.html" class="lien flexCenter alignCenter">Hébergements
                     </a>
                 </div>
-                <div>
+                <div  class="contenantLien">
                     <a href="activités.html"  class="lien flexCenter alignCenter">Activités
                     </a></div>
             </nav>
@@ -28,29 +29,32 @@
                 <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                 <p>En plein centre-ville ou en pleine nature</p>
             </div>
-            <div class="flex alignStart row padding margin">
-                <div class="backgroundgrey roundedBorderleft ColorBlue padding">
+            <div class="flexStart row alignStart search">
+                <div class="backgroundgrey sizeIcone flexCenter alignCenter">
                     <i class="fa-solid fa-location-dot"></i>
                 </div>
-                <div><input type="search" placeholder="Marseille, France" class="search"></div>
-            <div class="roundedBorderRight backgroundblue padding">Rechercher</div>
+                <div><input type="search" placeholder="Marseille, France" class="input alignCenter flexCenter"></div>
+                <div class="rechercher flexCenter alignCenter row backgroundblue">
+                    <div class="icon sizeIcone flexCenter alignCenter"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <span class="text">Recherche</span>
+                  </div>
             </div>
         </div>
         <div class="sectionFiltre">
-            <div><h1>Filtres</h1></div>
-            <div class="contenantFiltres flexAround alignCenter">
+            <div><h2>Filtres</h2></div>
+            <div class="contenantFiltres flex alignCenter">
             <div class=" flexCenter row alignCenter boxFiltre" id="economique">
                 <div>
                     <i class="fa-solid fa-money-bill-1-wave ColorBlue margin"></i>
                 </div>
-                <div ><p>Economique</p></div>
+                <div ><h3>Économique</h3></div>
             </div>
             <div class=" flexCenter row alignCenter boxFiltre" id="familial">
                 <div>
                     <i class="fa-solid fa-child-dress ColorBlue margin"></i>
                 </div>
                 <div>
-                    <p>Familial</p>
+                    <h3>Familial</h3>
                 </div>
             </div>
             <div class=" flexCenter row alignCenter boxFiltre" id="romantique">
@@ -58,11 +62,11 @@
                 <i class="fa-solid fa-heart ColorBlue margin"></i>
             </div>
             <div>
-                <p>Romantique</p>
+                <h3>Romantique</h3>
             </div></div>
             <div class=" flexCenter row alignCenter boxFiltre" id="animaux">
             <div><i class="fa-solid fa-dog ColorBlue margin"></i></div>
-            <div><p>Animaux autorisés</p></div>
+            <div><h3>Animaux autorisés</h3></div>
         </div>
             </div>
         </div>
@@ -74,7 +78,7 @@
         </div>
         <section>
             <div class="sizeHebergements column backgroundgrey roundedBorderAll">
-                <h2>Hebergements à Marseille</h2>
+                <h2>Hébergements à Marseille</h2>
                 <div class="contenuHeb flexAround alignCenter DirVariable ">
                     <div class="carteHeb flexCenter column alignCenter backgroundWhite roundedBorderAll">
                         <div class="imgHebergements"><img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="annie-spratt-Eg1qcIitAuA-unsplash" class="photos roundedBorderTop"/></div>
@@ -153,12 +157,12 @@
             </div>
                     <h4>Afficher plus</h4>
                 </div>
-            <div class ="sizePopulaire column  alignCenter roundedBorderAll backgroundgrey">
-                <div class="flexBetween alignCenter row">
+            <div class ="sizePopulaire column roundedBorderAll backgroundgrey">
+                <div class="flexBetween row">
                     <div><h2>Les plus populaires</h2></div>
-                    <div class="ColorBlue"><i class="fa-solid fa-chart-line"></i></div>
+                    <div class="ColorBlue alignCenter flexCenter"><i class="fa-solid fa-chart-line"></i></div>
                 </div>
-                <div class="contenuPop flexBetween alignCenter">
+                <div class="contenuPop flexCenter alignCenter">
                     <div class="cartePop flexCenter row alignCenter backgroundWhite roundedBorderAll">
                         <div class="imgPop"><img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="annie-spratt-Eg1qcIitAuA-unsplash" class="photosPop roundedBorderleft"/></div>
                         <div class="popInfos flexStart column">
