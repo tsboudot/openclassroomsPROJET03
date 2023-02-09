@@ -366,21 +366,19 @@ border-radius: 20px 0px 0px 20px;
 }
 
 .activCarte
-{   min-width: 302px;
+{   max-width: 265px;
+    min-width: 235px;
     width: 21%;
     height: 444.5px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .imgAct
 {
-    height: 98%;
-    width: 98%;
-
+    height: 100%;
 }
 .photosAct{
-
 height: 389px;
-width: 302px;
+width: 100%;
 }
 footer{
     margin-top: 3%;
@@ -390,10 +388,13 @@ footer{
     line-height: 1.9em;
 }
 @media screen and (max-width: 992px){
-    .activCarte{ height: 267px;
-    width: 182px;}
+    .activCarte
+    { height: 267px;
+    max-width: 217px;
+    min-width: 125px;
+width: 21%;}
+
     .photosAct{
-        width: 182px;
         height: 211px;}
         .contenuPop{ flex-direction: row;}
         .sizeHebergements{width: 100%;
@@ -414,7 +415,6 @@ footer{
 
 
 @media screen and (max-width: 768px) {
-    h3{font-size: 11px;}
     .DirVariable {
         flex-direction: column;
     }
@@ -511,12 +511,22 @@ height: 124px;
 max-width: 242px;
 width: 100%;
 }
+.hebInfos{
+    margin-top: 14%;
+}
         .activCarte{ height: 190px;
-            width: 334px;}
+            width: 334px;
+        max-width: none;
+    min-width: none;
+margin-right: auto;
+margin-left: auto;
+margin-bottom: 12px;}
         .photosAct{
                 width: 334px;
                 height: 134px;
             }
+
+
         .contenuPop{ flex-direction: column;}
         
         .sizePopulaire{width: 100%;
