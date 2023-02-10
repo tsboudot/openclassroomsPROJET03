@@ -388,6 +388,11 @@ footer{
     line-height: 1.9em;
 }
 @media screen and (max-width: 992px){
+    body {
+        padding-right: 3%;
+        padding-left: 3%;
+        margin: 0px;
+    }
     .activCarte
     { height: 267px;
     max-width: 217px;
@@ -399,9 +404,11 @@ width: 21%;}
         .contenuPop{ flex-direction: row;}
         .sizeHebergements{width: 100%;
             margin-right: 0px;
+            padding: 1.5%;
         }
             .sizePopulaire{width: 100%;
                 margin-left: 0px;
+                padding: 1.5%;
         }
         section{ flex-direction: column;}
         .boxFiltre{padding:0px 8px 0px 8px;
