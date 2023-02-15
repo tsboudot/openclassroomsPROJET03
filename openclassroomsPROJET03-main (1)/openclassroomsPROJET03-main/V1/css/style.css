@@ -1,0 +1,600 @@
+body
+{
+    height: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px 0px 0px 0px;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    line-height: 1em;
+    max-width: 1400px;
+}
+a
+{
+    text-decoration: none;
+    outline: none;
+    color: black;
+}
+h1{
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+h2{
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 45px;
+}
+h3{
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1em;
+}
+h4{
+
+        font-weight: 700px;
+        font-size: 16px;
+        margin-bottom: 35px;
+        padding: 0px;
+        line-height: 1em;
+}
+h6{
+    line-height: 1.7em;
+    font-size: 18px;
+}
+p{
+    font-weight: 400;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1em;
+}
+::placeholder {
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
+}
+.flex
+{
+    display: flex;
+}                                   /*flex*/
+.flexAround{
+    display: flex;
+    justify-content: space-around;
+}
+.flexCenter{
+    display: flex;
+    justify-content: center;
+}
+.flexBetween{
+    display: flex;
+    justify-content: space-between;
+}
+.flexStart{
+    display: flex;
+    justify-content: flex-start;
+}
+.alignCenter
+{
+    align-items: center;
+}
+.alignStart{
+    align-items: flex-start;
+}
+.row
+{
+    flex-direction: row;
+}
+.column
+{
+    flex-direction: column;
+}
+.DirVariable {
+    flex-direction: row;
+}
+.VariableColumn
+{
+    flex-direction: column;
+}
+        /*Border */
+.roundedBorderTop
+{
+    border-radius : 20px 20px 0px 0px;
+}
+.roundedBorderleft
+{
+    border-radius : 20px 0px 0px 10px;
+}
+.roundedBorderRight
+{
+    border-radius : 0px 20px 20px 0px;
+}
+.roundedBorderAll
+{
+    border-radius: 20px;
+}
+.solidBorder
+{
+    border: 1px solid black;
+}
+.padding
+{
+    padding: 6px;
+}
+.margin
+{
+    margin: 3px;
+}
+.variableMarginBottom
+{
+    margin-bottom: 25px;
+}
+                            /*Color */
+.backgroundblue
+{
+    background-color: #0065fc;
+    color: white;    
+}
+.backgroundgrey
+{
+    background-color: #F2F2F2;
+}
+.backgroundWhite
+{
+    background-color: white;
+}
+.ColorBlue
+{
+    color:#0065fc;
+}
+.colorGrey{
+    color: grey;
+}
+header
+{
+    height: 45px;
+    width: 100%;
+    padding-bottom: 25px;
+}
+.logo{
+        height: 19px;
+        width: 61.09px;
+    padding-top: 44px;}
+nav{
+    width: 25%;
+    min-width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+.lien
+{
+    text-decoration: none;
+    color: black;
+    padding-top: 44px;
+    font-size: 16px;
+    font-weight: 400;
+    flex-grow: 1;
+}
+.lien:hover
+{
+    border-top: 1px solid #0065fc;
+    color:#0065fc;
+}
+.sectionRecherche
+{
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    height: 36px;
+}
+.search
+{
+    width: 100%;
+    max-width: 332px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+.sizeIcone
+{
+   height: 49px;
+   width: 49px;
+   border-radius: 15px 0px 0px 15px;
+}
+.input {
+height: 49px;
+width: 100%;
+border: 2px solid  #F2F2F2;
+padding-left: 5px;
+}
+.icon {
+    display: none;}
+.icon1
+{
+    border: 2px solid #F2F2F2;
+    border-radius: 30px;
+    text-align: center;
+    width: 17px;
+    height: 17px;
+}
+.icon2{
+padding-top: 20px;
+}
+.text {
+    display: inline-block;
+    width: 132px;
+    text-align: center;
+}
+.rechercher{
+    height: 49px;
+    border-radius: 0px 15px 15px 0px;
+}
+.sectionFiltre{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contenantFiltres{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.boxFiltre
+{
+    padding: 1px 15px 1px 15px;
+    max-width : 226px;
+    height: 50px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    border: 3px solid #F2F2F2;
+    border-radius: 25px;
+    margin-bottom: 5px;
+}
+#animaux{
+    min-width: 226px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.boxFiltre:hover{
+    background-color: #deebff;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+.enTeteHeb{
+    margin-left: 30px;
+    height: 71px;
+}
+.enTetePop{
+    margin-right: 15px;
+    margin-left: 20px;
+    padding-right: 5%;
+    padding-left: 5%;
+    height: 71px;
+}
+.sizeHebergements{
+    display: flex;
+    flex: 2;
+    height: 626px;
+    margin-right: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.sizePopulaire{
+    display: flex;
+    flex: 1;
+    height: 626px;
+    margin-left: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.carteHeb
+{   max-width: 246px;
+    min-width: 217px;
+    width: 29%;
+    height: 199px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+.imgHebergements
+{
+    margin-top: 5px;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.photos{
+height: 124px;
+max-width: 242px;
+width: 100%;
+object-fit: cover;
+}
+.hebInfos
+{  
+    height: 37%;
+    margin: 2px;
+    margin-top: 10px;
+    padding-left: 7px;
+}
+.hebTitre
+{
+    padding: 2px;
+}
+.afficherPlus
+{
+    margin-left: 20px;
+}
+.fa-star
+{
+    padding-top: 4px;
+ height: 3px;
+ width: 3px;
+ margin-right: 6px;
+}
+.contenuPop{
+    padding: 5px;
+    flex-direction: column;
+}
+.cartePop {
+    width: 100%;
+    max-width: 343px;
+    min-width: 256px;
+    height: 144px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin-right: 2px;
+    margin-left: 2px;
+    margin-bottom: 23px;
+    padding: 5px;
+}
+.imgPop
+{
+    height: 100%;
+}
+.photosPop{
+height: 144px;
+width: 137px;
+object-fit: cover;
+border-radius: 20px 0px 0px 20px;
+}
+.popInfos{
+    margin-left: 15px;
+    margin-right: 25px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.popTitre{
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+}
+.popPrix{
+    margin-top: 0px;
+    padding-top: 0px;
+    line-height: 1em;
+    font-size: 14px;
+}
+.divAct{
+    width: 100%;
+}
+
+.activCarte
+{   max-width: 265px;
+    min-width: 235px;
+    width: 21%;
+    height: 444.5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.imgAct
+{
+    height: 100%;
+}
+.photosAct{
+height: 389px;
+width: 100%;
+}
+footer{
+    margin-top: 3%;
+    padding-top: 20px;
+}
+.Pfoot{
+    line-height: 1.9em;
+}
+@media screen and (max-width: 992px){
+
+    .activCarte
+    { height: 267px;
+    max-width: 217px;
+    min-width: 125px;
+width: 21%;}
+
+    .photosAct{
+        height: 211px;}
+        .contenuPop{ flex-direction: row;
+            justify-content: center;
+        padding-left: 2%;
+    padding-right: 2%;}
+        .cartePop {
+            width: 100%;
+            max-width: 343px;
+            min-width: 210px;
+            height: 144px;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+            margin-right: 2px;
+            margin-left: 2px;
+            margin-bottom: 23px;
+            padding: 5px;
+        }
+        .photosPop{
+            height: 144px;
+            width: 106px;
+            object-fit: cover;
+            border-radius: 20px 0px 0px 20px;
+            }
+        .sizeHebergements{width: 100%;
+            margin-right: 0px;
+        }
+            .sizePopulaire{width: 100%;
+                margin-left: 0px;
+        }
+        section{ flex-direction: column;}
+        .boxFiltre{padding:0px 8px 0px 8px;
+            margin-left: 1.5%;
+    margin-right: 1.5%;}
+    .boxFiltre:hover{
+        background-color: white;
+    }
+    #animaux{
+        min-width: 190px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .DirVariable {
+        flex-direction: column;
+    }
+    html, body{
+        max-width: 100%;
+        overflow-x: hidden;
+        padding: 2px;
+    }
+    header {
+            height: 155px;
+            align-items: center;
+        }
+        .logo {
+            margin-bottom: 46px;}
+        nav { width: 100%;
+            justify-content: space-around;
+        }
+
+
+        .search
+        {
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            width: 278px;
+        }
+        .contenantLien{
+            width: 50%;
+            flex-grow: 1;
+        }
+        .lien{
+            padding-bottom: 10px;
+        }
+        .lien:hover
+        {   
+        
+            border-top: 1px solid white;
+            border-bottom: 1px solid #0065fc;
+            color:#0065fc;
+        }
+        .sectionRecherche{ margin-bottom: 35px;}
+
+        .boxFiltre{min-width: 160px;
+            width: 44%;
+        padding: 0;
+    }
+    .boxFiltre:hover{
+        background-color: white;
+    }
+.contenantFiltres{            
+    height: 140px;
+    width: 94%;
+    position: relative;
+    justify-content: center;}
+            
+    #economique {position: absolute;
+        top: 1%;
+        left : 1%;
+        }
+            
+    #familial
+        {position: absolute;
+        top: 52%;
+        left : 1%;
+        }
+            
+            #romantique{
+                position: absolute;
+                top: 1%;
+                left: 53%;
+            }
+            
+            #animaux{
+                position: absolute;
+                top: 52%;
+                left: 53%;
+                min-width: 160px;
+            }
+            .sectionFiltre{ display: flex;
+                flex-direction: column; }
+                .text {
+                    display: none;
+                  }
+                
+                  .icon {
+                    display: flex;
+                  }
+.sizeHebergements{ background-color: white;
+            width: 100%;
+padding: 0;}
+.carteHeb{
+width: 100%;
+max-width: 343px;
+min-width: 210px;
+height: 199px;
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+margin-right: 2px;
+margin-left: 2px;
+margin-bottom: 23px;
+padding: 5px;}
+.imgHebergements
+{
+    height: 48%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+.photos{
+height: 124px;
+width: 100%;
+max-width: none;
+}
+.hebInfos{
+    margin-top: 14%;
+}
+        .activCarte{ height: 190px;
+            width: 334px;
+        max-width: none;
+    min-width: none;
+margin-right: auto;
+margin-left: auto;
+margin-bottom: 12px;}
+        .photosAct{
+                width: 334px;
+                height: 134px;
+            }
+.sizePopulaire{
+    margin-left: 0px;
+    padding: 0px;
+    border-radius: 0px;
+}
+.afficherPlus
+{
+ display: none;
+}
+
+        .contenuPop{ flex-direction: column;}
+        section{ flex-direction: column-reverse;}
+        }
