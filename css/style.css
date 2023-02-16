@@ -36,7 +36,7 @@ h3{
 }
 h4{
 
-        font-weight: 700px;
+        font-weight: 700;
         font-size: 16px;
         margin-bottom: 35px;
         padding: 0px;
@@ -151,7 +151,7 @@ p{
     color:#0065fc;
 }
 .colorGrey{
-    color: grey;
+    color: #F2F2F2;
 }
 header
 {
@@ -296,7 +296,7 @@ section{
     margin-bottom: 10px;
 }
 .carteHeb
-{   max-width: 246px;
+{   padding-top: 5px;
     min-width: 217px;
     width: 29%;
     height: 199px;
@@ -305,7 +305,6 @@ section{
 }
 .imgHebergements
 {
-    margin-top: 5px;
     width: 96%;
     margin-left: auto;
     margin-right: auto;
@@ -318,10 +317,14 @@ object-fit: cover;
 }
 .hebInfos
 {  
-    height: 37%;
+/*    height: 37%;*/
     margin: 2px;
-    margin-top: 10px;
+    margin-top: 2px;
     padding-left: 7px;
+}
+.hebEtoiles
+{
+    padding-top: 4%;
 }
 .hebTitre
 {
@@ -387,13 +390,10 @@ border-radius: 20px 0px 0px 20px;
 .activCarte
 {   max-width: 302px;
     min-width: 235px;
+    width: 23%;
 
     height: 444.5px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-.imgAct
-{
-    height: 100%;
 }
 .photosAct{
 height: 389px;
@@ -411,7 +411,7 @@ footer{
     .activCarte
     { height: 267px;
     max-width: 217px;
-    min-width: 125px;
+    min-width: 110px;
 width: 21%;}
 
     .photosAct{
@@ -439,9 +439,11 @@ width: 21%;}
             }
         .sizeHebergements{width: 100%;
             margin-right: 0px;
+            padding: 0px;
         }
             .sizePopulaire{width: 100%;
                 margin-left: 0px;
+                padding: 0px;
         }
         section{ flex-direction: column;}
         .boxFiltre{padding:0px 8px 0px 8px;
@@ -452,6 +454,14 @@ width: 21%;}
     }
     #animaux{
         min-width: 190px;
+    }
+    .enTeteHeb{
+        margin-left: 3%;
+    }
+    .enTetePop{
+        margin-left: 3%;
+        margin-right: 3%;
+        padding: 0px;
     }
 }
 
@@ -549,41 +559,40 @@ width: 21%;}
             width: 100%;
 padding: 0;}
 .carteHeb{
-width: 100%;
-max-width: 343px;
-min-width: 210px;
-height: 199px;
-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-margin-right: 2px;
-margin-left: 2px;
-margin-bottom: 23px;
+    height: 187px;
+    width: 334px;
+margin-right: auto;
+margin-left: auto;
+margin-bottom: 12px;
 padding: 5px;}
 .imgHebergements
 {
-    height: 48%;
+    height: 53%;
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5px;
+    margin-bottom: 9px;
 }
 .photos{
-height: 124px;
-width: 100%;
+    width: 334px;
+    height: 109px;
 max-width: none;
+margin-bottom: 4px;
 }
-.hebInfos{
-    margin-top: 14%;
+.hebEtoiles{
+    padding-top: 7%;
 }
         .activCarte{ height: 190px;
-            width: 334px;
-        max-width: none;
-    min-width: none;
+            width: 100%;
+            max-width: 334px;
 margin-right: auto;
 margin-left: auto;
 margin-bottom: 12px;}
         .photosAct{
                 width: 334px;
                 height: 134px;
+            }
+            .imgAct{
+                height: 100%;
+                width: 100%;
             }
 .sizePopulaire{
     margin-left: 0px;
@@ -597,4 +606,24 @@ margin-bottom: 12px;}
 
         .contenuPop{ flex-direction: column;}
         section{ flex-direction: column-reverse;}
+        
+        .enTeteHeb{
+            margin-left: 10%;
+            margin-top: 0;
+            margin-right: 0;
+            margin-bottom: 0;
         }
+        .enTetePop{
+            margin-left: 10%;
+            margin-top: 0;
+            margin-right: 10%;
+            margin-bottom: 0;
+        }
+        .enTeteAct
+        {
+            padding-left: 10%;
+        }
+        footer{
+            padding-left: 10%;
+        }
+    }
