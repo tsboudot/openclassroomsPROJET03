@@ -5,11 +5,17 @@ body
     padding-right: 50px;
     padding-top: 0px;
     padding-bottom: 0px;
-    margin: 0px, 0px, 0px, 0px;
+    margin: 0px 0px 0px 0px;
     font-family: 'Raleway', sans-serif;
     color: black;
     line-height: 1em;
     max-width: 1400px;
+}
+a
+{
+    text-decoration: none;
+    outline: none;
+    color: black;
 }
 h1{
     font-weight: 700;
@@ -17,28 +23,28 @@ h1{
     margin-bottom: 5px;
 }
 h2{
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 22px;
     margin-bottom: 45px;
 }
 h3{
-    font-weight: 700px;
+    font-weight: 700;
     font-size: 16px;
     margin: 0px;
     padding: 0px;
     line-height: 1em;
 }
 h4{
-    {
+
         font-weight: 700px;
         font-size: 16px;
         margin-bottom: 35px;
         padding: 0px;
         line-height: 1em;
-    }
 }
 h6{
     line-height: 1.7em;
+    font-size: 18px;
 }
 p{
     font-weight: 400;
@@ -46,11 +52,10 @@ p{
     padding: 0px;
     line-height: 1em;
 }
-input{
+::placeholder {
     font-weight: 700;
     font-size: 16px;
     color: black;
-
 }
 .flex
 {
@@ -89,9 +94,6 @@ input{
 }
 .DirVariable {
     flex-direction: row;
-}
-.sectionRecherche{
-    height: 36px;
 }
 .VariableColumn
 {
@@ -183,7 +185,10 @@ nav{
 }
 .sectionRecherche
 {
-    align-items: flex-start;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    height: 36px;
 }
 .search
 {
@@ -206,6 +211,17 @@ padding-left: 5px;
 }
 .icon {
     display: none;}
+.icon1
+{
+    border: 2px solid #F2F2F2;
+    border-radius: 30px;
+    text-align: center;
+    width: 17px;
+    height: 17px;
+}
+.icon2{
+padding-top: 20px;
+}
 .text {
     display: inline-block;
     width: 132px;
@@ -218,7 +234,7 @@ padding-left: 5px;
 .sectionFiltre{
     display: flex;
     flex-direction: row;
-    justify-content: baseline;
+    justify-content: center;
     align-items: flex-start;
 }
 
@@ -298,7 +314,7 @@ section{
 height: 124px;
 max-width: 242px;
 width: 100%;
-object-fit: fill;
+object-fit: cover;
 }
 .hebInfos
 {  
@@ -311,7 +327,10 @@ object-fit: fill;
 {
     padding: 2px;
 }
-
+.afficherPlus
+{
+    margin-left: 20px;
+}
 .fa-star
 {
     padding-top: 4px;
@@ -327,7 +346,7 @@ object-fit: fill;
     width: 100%;
     max-width: 343px;
     min-width: 256px;
-    height: 137px;
+    height: 144px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     margin-right: 2px;
     margin-left: 2px;
@@ -339,9 +358,9 @@ object-fit: fill;
     height: 100%;
 }
 .photosPop{
-height: 136px;
-width: 144px;
-object-fit: fill;
+height: 144px;
+width: 137px;
+object-fit: cover;
 border-radius: 20px 0px 0px 20px;
 }
 .popInfos{
@@ -366,9 +385,9 @@ border-radius: 20px 0px 0px 20px;
 }
 
 .activCarte
-{   max-width: 265px;
+{   max-width: 302px;
     min-width: 235px;
-    width: 21%;
+
     height: 444.5px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -388,6 +407,7 @@ footer{
     line-height: 1.9em;
 }
 @media screen and (max-width: 992px){
+
     .activCarte
     { height: 267px;
     max-width: 217px;
@@ -396,7 +416,27 @@ width: 21%;}
 
     .photosAct{
         height: 211px;}
-        .contenuPop{ flex-direction: row;}
+        .contenuPop{ flex-direction: row;
+            justify-content: center;
+        padding-left: 2%;
+    padding-right: 2%;}
+        .cartePop {
+            width: 100%;
+            max-width: 343px;
+            min-width: 210px;
+            height: 144px;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+            margin-right: 2px;
+            margin-left: 2px;
+            margin-bottom: 23px;
+            padding: 5px;
+        }
+        .photosPop{
+            height: 144px;
+            width: 106px;
+            object-fit: cover;
+            border-radius: 20px 0px 0px 20px;
+            }
         .sizeHebergements{width: 100%;
             margin-right: 0px;
         }
@@ -407,6 +447,9 @@ width: 21%;}
         .boxFiltre{padding:0px 8px 0px 8px;
             margin-left: 1.5%;
     margin-right: 1.5%;}
+    .boxFiltre:hover{
+        background-color: white;
+    }
     #animaux{
         min-width: 190px;
     }
@@ -418,21 +461,28 @@ width: 21%;}
     .DirVariable {
         flex-direction: column;
     }
-    body {padding-right: 0px;
-        padding-left: 0px;
-    margin-right: 0px;
-        margin-left:0px;
-        width: 100%;
-}
+    html, body{
+        max-width: 100%;
+        overflow-x: hidden;
+        padding: 2px;
+    }
     header {
             height: 155px;
+            align-items: center;
         }
-        .logo {        text-align: center;
-            margin: 0px;
+        .logo {
             margin-bottom: 46px;}
         nav { width: 100%;
             justify-content: space-around;
-            min-width: none;
+        }
+
+
+        .search
+        {
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            width: 278px;
         }
         .contenantLien{
             width: 50%;
@@ -454,10 +504,12 @@ width: 21%;}
             width: 44%;
         padding: 0;
     }
-            
+    .boxFiltre:hover{
+        background-color: white;
+    }
 .contenantFiltres{            
     height: 140px;
-    width: 100%;
+    width: 94%;
     position: relative;
     justify-content: center;}
             
@@ -495,16 +547,17 @@ width: 21%;}
                   }
 .sizeHebergements{ background-color: white;
             width: 100%;
-        margin: 0px;}
-.carteHeb
-{
-    max-width: 246px;
-    width: 85%;
-    height: 199px;
-}
-.sizePopulaire{
-    width: 100%;
-margin: 0px;}
+padding: 0;}
+.carteHeb{
+width: 100%;
+max-width: 343px;
+min-width: 210px;
+height: 199px;
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+margin-right: 2px;
+margin-left: 2px;
+margin-bottom: 23px;
+padding: 5px;}
 .imgHebergements
 {
     height: 48%;
@@ -515,15 +568,11 @@ margin: 0px;}
 }
 .photos{
 height: 124px;
-max-width: 242px;
 width: 100%;
+max-width: none;
 }
 .hebInfos{
     margin-top: 14%;
-}
-.divAct{
-    width: 100%;
-    margin-left: 5px;
 }
         .activCarte{ height: 190px;
             width: 334px;
@@ -536,15 +585,16 @@ margin-bottom: 12px;}
                 width: 334px;
                 height: 134px;
             }
-
+.sizePopulaire{
+    margin-left: 0px;
+    padding: 0px;
+    border-radius: 0px;
+}
+.afficherPlus
+{
+ display: none;
+}
 
         .contenuPop{ flex-direction: column;}
         section{ flex-direction: column-reverse;}
-        }
-        footer{
-            width: 100%;
-            margin: 0px;
-            padding: 0%;
-            justify-content: center;
-            align-items: center;
         }
